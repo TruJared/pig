@@ -80,7 +80,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
   scores[activePlayer] += roundScore;
 
   // check for victory condition
-  if (scores[activePlayer] >= 10) {
+  if (scores[activePlayer] >= 100) {
     document.getElementById('name-' + activePlayer).textContent = 'Winnah!!';
     diceDom.src = 'cake-icon.png';
     document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
